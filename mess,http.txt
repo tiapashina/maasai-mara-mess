@@ -1,0 +1,47 @@
+html
+<html>
+<body style="font-family:Arial;padding:20px;">
+<h2>Maasai Mara Mess Menu</h2>
+
+<p>1.Black Tea-10 Ksh<button
+onclick="add('Black Tea',10)">Add</button></p>
+<p>2.Mandazi-5 Ksh<button
+onclick="add('Mantazi',5)">Add</button></p
+<p>3.Buns-5 Ksh<button
+onclick="add('Buns',5)">Add</button></p
+<p>4.Uji-10 Ksh<button
+onclick="add('Uji',10)">Add</button></p
+<p>5.Ugali-10 Ksh<button
+onclick="add('Ugali',10)">Add</button></p
+<p>6.Rice-15 Ksh<button
+onclick="add('Rice',15)">Add</button></p
+<p>7.Beef-35 Ksh<button
+onclick="add('Beef',35)">Add</button></p
+<p>8.Ndengu-15 Ksh<button
+onclick="add('Ndengu',15)">Add</button></p
+<p>9.Beans-15 Ksh<button
+onclick="add('Beans',15)">Add</button></p
+<p>10.Matumbo-30 Ksh<button
+onclick="add('Matumbo',30)">Add</button><p
+ 
+<hr>
+<h3 id="cart">Your Order:Nothing</h3>
+<input id="phone" placeholder="Your M-pesa 07..."
+style="padding:10px;width:90%;">
+<br><br>
+<button onclick="pay()" style="padding:15px;
+background:green;color:white; width:95%;
+font-size:18px;">PAY NOW</button>
+
+<h2 id="receipt"></h2>
+
+<script>
+let total=0;let items='''';
+function add(name,price){
+total=total+price;
+items=items+name+",";
+document.getElementByld('receit').innerHTML="Order Paid Ksh"+ total+"<br>phone:"+phone+"<br><br>Show this screen to collect food!<br>Order#:"+ Date.now();
+alert("STK Push sent to "+ phone+"(Demo)");}
+</script>
+</body>
+</html>
